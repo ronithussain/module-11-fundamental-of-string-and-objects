@@ -1,10 +1,3 @@
-const sunGlass = {
-    color: 'white',
-    price: 129,
-    brand: 'Ray Ban'
-}
-// console.log(sunGlass);
-
 const student ={
     name: 'Hussain',
     id: 122,
@@ -12,6 +5,10 @@ const student ={
     subject: 'Management',
     isAPlus: false,
     isRegular: true,
-    
+    isSingle: true
 }
 console.log(student);
+
+delete student.isSingle;
+console.log(Object.keys(student));
+console.log(Object.values(student))
